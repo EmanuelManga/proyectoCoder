@@ -468,10 +468,32 @@ body{
 .relacionesMain{
     @extend %cuadroMain;
 
-    .loremR{
+    .contenidoRelaciones{
         @extend %textoGeneral;
         max-width: 90%;
         font-weight: $espesorTexto;
+
+        .titRelacionesGeneral{
+            font-size: 1.5rem;
+            @extend %titClasFont;
+            border-bottom: 1px solid $colorLineas;
+            
+            color: $colorRelacionesGeneral;
+        }
+
+
+        .titRelaciones{
+            font-size: 1.2rem;
+            @extend %titClasFont;
+            padding-bottom: .2rem;
+            color: $colortitRelaciones;
+        }
+
+        .textRelaciones{
+            font-weight: $espesorTexto;
+            padding-bottom: 1rem;
+        }
+
 
     }
 
