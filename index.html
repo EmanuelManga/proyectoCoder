@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta etiquetras descripcion -->
+    <meta name="description" content="Fanpage enfocado a Rimuru Tempest del anime Tensei Shitara Slime Datta Ken">
+
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="Rimuru, Tempest, Slime, Anime">
+
+    <!-- Protocolo open graph -->.
+    
+    <meta property="og:title" content="Rimuru - Tensei Shitara Slime Datta Ken">
+    <!-- <meta property="og:url" content="rimuru.com"> -->
+
+
+    <title>Rimuru - Tensei Shitara Slime Datta Ken</title>
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Cambiar Icono Pestana -->
+    <link rel="icon" href="./src/multimedia/imagenes/Rimuru_Slime_Anime.png">
+
+    <!-- Link Animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body id="bodyInicio">
+    <!-- Header -->
+    <header id="inicio">
+        <!-- Aca va una imagen como fondo del header -->
+        <section class="bannerHeader">
+
+            <div class="bannerTit">
+                <h1 class="titJap"> Tensei Shitara Slime Datta Ken </h1>
+                <span class="titEsp" >Aquella vez que me converti en Slime</span>
+            </div>
+            
+
+        </section>
+
+    </header>
+
+
+    <!-- Navevador Menu Principal -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="padding: 0 0;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/paginas/personajes.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/paginas/openings.html">Openings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/paginas/transformaciones.html">Transformaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./src/paginas/relaciones.html">Relaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Nav del contenido de texto  esta fuera del main porque lo quiero en Sticky y que esta a la izquierda fuera del main -->
+
+    <nav id="navbar-example2 " class="navbar navbar-light bg-light px-3 navContMod">
+            <a class="nav-link navContLink" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <img class="navContIcon" src="./src/multimedia/imagenes/listx1.png" alt="listIcon">
+            </a>
+            <ul class="dropdown-menu dropMenuMod">
+                <li><a class="dropdown-item dropMod" href="#inicioCont">1 Inicio</a></li>
+                <li><a class="dropdown-item dropMod" href="#apariencia">2 Apariencia</a></li>
+                <li>
+                    <nav class="nav-item dropdown">
+                        <a class="dropdown-item dropMod" href="#slime">2.1 Slime</a>
+                        <a class="dropdown-item dropMod" href="#mimica">2.2 Mimica</a>
+                    </nav>
+                </li>
+                <li><a class="dropdown-item dropMod" href="#personalidad">3 Personalidad</a></li>
+            </ul>
+    </nav>
+    
+    <!-- Seccion uno -->
+    <main class="seccionInc">
+
+        <div class="animate__pulse">
+            <h2 class="inicioTit">¡Mucho gusto! ¡Soy Rimuru, el Slime!</h2>
+            <span class="inicioTit">¡No soy un Slime malo!</span>
+        </div>
+
+        <section class="contenedor">
+
+            <!-- Box Derecha    datos adicionales -->
+            <div class="boxDerecho">
+
+                <!-- <img src="./src/multimedia/imagenes/Rimuru_Slime_Anime.png" alt="Rimuru Slime Form" class="rimuruSlimeFBox "> -->
+
+                <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <a type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></a>
+                        <a type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2">Humano</a>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./src/multimedia/imagenes/Rimuru_Slime_Anime.png" class="d-block w-100"
+                                alt="imgRimuruSlimeBox">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="textoImagenCarousel">Slime</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/multimedia/imagenes/static-assets-upload7872111191106640691.png"
+                                class="d-block wHumanForm" alt="imgRimuruHumanBox">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="textoImagenCarousel">Humano</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Grid dentro del box con Boostrap  -->
+
+                <div class="boxDerechoDatos">
+                    <h5 class="boxDerchTit">Especie</h5>
+                    <div class="boxDerchTex">
+                        <li>Demon Slime(Slime Demonio)</li>
+                    </div>
+                </div>
+                <div class="boxDerechoDatos">
+                    <h5 class="boxDerchTit">Titulos</h5>
+                    <div class="boxDerchTex">
+                        <li>Gobernado de Monstruos</li>
+                        <li>Señor Demonio Despertado</li>
+                        <li>Rising Star / Newbie (dentro de Octagram)</li> 
+                    </div>
+                </div>
+                <div class="boxDerechoDatos">
+                    <h5 class="boxDerchTit">Alias / Nickname</h5>
+                    <div class="boxDerchTex">
+                        <li>Slime-san (por Shizue)</li>
+                        <li>Sensei (por sus estudiantes)</li>
+                        <li>Milord (por Ranga)</li>
+                        <li>Satoru Mikame (vida pasada)</li>
+                    </div>
+                </div>
+                <div class="boxDerechoDatos">
+                    <h5 class="boxDerchTit">Camino de Evolucion Anterior</h5>
+                    <div class="boxDerchTex">
+                        <li>Slime</li>
+                    </div>
+                </div>
+                <div class="boxDerechoDatos">
+                    <h5 class="boxDerchTit">Titulos Anteriores</h5>
+                    <div class="boxDerchTex">
+                        <li>Canciller de la Gran Alianza de Jura</li>
+                    </div>
+                </div>
+
+
+                </div>
+
+
+
+
+
+            <!-- Contenido Texto  -->
+
+            <div class="contenido">
+                <span id="inicioCont"></span>
+                <p class="lorem">Rimuru Tempest, anteriormente conocido como Satoru Mikami, es el protagonista principal
+                    de Tensei Shitara Slime Datta Ken(Aquella vez que me converti en Slime). </p>
+                <p class="lorem">Compañero y mejor amigo del True Dragon Veldora Tempest, Rimuru es el fundador y rey de
+                    la Federacion de Jura Tempest en el Bosque de Jura. Él es una de los Reyes Demonios de Octagram.
+                    Vive en la Ciudad Rimuru, ciudad capital de laFederacion de Jura Tempest.</p>
+                <h3 class="titulosClase animate__shakeX " id="apariencia">Apariencia</h3>
+                <hr class="separadorHoriTit">
+                <h4 class="titulosSubClase" id="slime">Slime</h4>
+                <p class="lorem">Rimuru inicialmente aparece como un Slime de cuerpo azul, pero al convertirse en Demon
+                    Slime, su cuerpo se vuelve plateado con rayas de oro.</p>
+                <p class="lorem">Como slime, dado que su cuerpo es andrógino, todo lo que imita adquiere una forma
+                    andrógina de las respectivas criaturas, sin dejar de tener grandes semejanzas con dichas criaturas.
+                </p>
+                <p class="lorem">Su masa también creció con el tiempo, lo que le permitió adaptarse a formas de
+                    mimetismo más grandes sin usar magia adicional para compensar la masa adicional. Hacia el comienzo
+                    de la historia, solo tiene la masa suficiente para aparecer como un niño humano, pero cada vez que
+                    consume a un enemigo poderoso en relación con su fuerza actual, su tamaño en forma humana muestra un
+                    aumento notable.</p>
+                <h4 class="titulosSubClase" id="mimica">Mímica: Humana</h4>
+                <p class="lorem">De esta forma, Rimuru posee cabello azul plateado. No hay características sexuales
+                    visibles; sin embargo, a menudo se lo confunde con una niña debido al hecho de que la forma original
+                    pertenecía a Shizue Izawa. Pero cuando usa la máscara antimagia que guardaba como recuerdo de Shizu,
+                    su patrón de habla también puede hacer que los demás lo vean como un niño prepúber.</p>
+                <p class="lorem">A diferencia de los otros Mimics de Rimuru, su cabello cambia de color a uno similar al
+                    de su cuerpo de limo original. Esto podría estar relacionado con Shizu "optimizando" su cuerpo para
+                    la posesión espiritual de Ifrit durante varias décadas.</p>
+                <p class="lorem">Dado que su cuerpo de limo es igual en masa a su forma humana, Rimuru llena este cuerpo
+                    con una forma sólida en lugar de niebla negra. Sin la niebla negra, no se requiere un consumo de
+                    magia adicional para mantener la forma. No hay ninguna molestia cuando asume esta forma. Si usa la
+                    niebla negra, también puede asumir la forma de un adulto.</p>
+                <p class="lorem">Sus capacidades motoras mejoran cuando está en su forma humana, y le resulta más fácil
+                    moverse que en su forma de slime. Aunque parece ser humano, esta forma no tiene necesidad de
+                    respirar, excretar ni de tener órganos reproductivos. Sin embargo, puede comer, probar y beber
+                    libremente.</p>
+                <p class="lorem">En su forma humana, usa un abrigo de piel negro (azul en Manga y Anime) y una bufanda.
+                    Debajo del abrigo, usa el kimono y los pantalones que Shuna le había hecho. También usa la ropa
+                    interior de hilo de acero que él mismo hace. A menudo usa la vieja máscara de Shizue para ocultar su
+                    aura de monstruo.</p>
+                <p class="lorem">Al convertirse en un True Demond Lord y evolucionar su raza de Slime a Demon Slime,
+                    Rimuru ha sido representado con un abrigo negro. Sus uñas también parecen más afiladas y su forma
+                    humana en general parece un poco más vieja. </p>
+                <h3 class="titulosClase animate__shakeX" id="personalidad">Personalidad</h3>
+                <hr class="separadorHoriTit">
+                <p class="lorem">Tiene un corazón amable y una personalidad peculiar. A pesar de que es bastante
+                    relajado y quiere evitar situaciones problemáticas tanto como sea posible, en realidad trabaja con
+                    mucha diligencia cuando hay una tarea que debe hacerse. </p>
+                <p class="lorem">Con el corazón de un trabajador y un querido compañero de trabajo , Rimuru tiene
+                    dificultades para rechazar a alguien si le suplica que lo ayude, lo que lleva a que a menudo termine
+                    con más trabajo del que puede manejar, su jefe de su vida anterior solía reprenderlo por.</p>
+                <p class="lorem">Rimuru tiende a reaccionar muy severamente cuando existe un peligro para sus seres
+                    cercanos, como sus compatriotas, subordinados (posiblemente debido al vínculo del alma que comparte
+                    con ellos), buenos amigos y estudiantes (no puede soportar que los niños sufran). Se podría decir
+                    que reacciona de forma exagerada a estos casos, pero simplemente muestra cuán profundamente se
+                    preocupa por ellos, como un marcado contraste con su yo alegre habitual. Incluso Hakuro notó durante
+                    el arco El ascenso del Señor Demonio que Farmas había "enojado a la única criatura en el mundo que
+                    no debería estar enojada". Durante este tiempo Rimuru mostró una gran rabia en su interior por el
+                    asesinato de sus compatriotas; aunque podía suprimir cualquier expresión externa, necesitaba una
+                    copia de la máscara de Shizu para suprimir sus magicules debido a que su rabia liberaba
+                    involuntariamente su poder.</p>
+                <p class="lorem">También tiene un lado bastante frío que no se muestra en el manga y el anime, como por
+                    ejemplo en la versión de eventos donde los Goblin Riders en lugar de Rimuru salvan a Shizu y al trío
+                    de aventureros de las hormigas gigantes, Rimuru es mucho más desconfiado. hacia sus invitados y
+                    cuando Shizu se enfurece, incluso sospecha que todo es una trampa para bajar la guardia para que el
+                    trío de aventureros pueda apuñalarlo por la espalda. Rimuru también menciona casualmente que podría
+                    matar a sus seguidores si deciden rebelarse contra él.</p>
+                <p class="lorem">El mayor defecto de la personalidad de Rimuru son sus problemas de ansiedad que están
+                    presentes en los tres medios. Después de que el Orc Disaster fue derrotado, Rimuru parecía seguro de
+                    que los Kijin no lo seguirían después y se sorprendió inmensamente cuando lo hicieron. Cuando Kenya
+                    Misaki se convirtió en candidata a Héroe, Rimuru se preocupó si perseguiría a Rimuru si descubría
+                    que es un Monstruo. Finalmente, Rimuru esperaba ser considerado un traidor después de revelar su
+                    identidad como Reencarnador del Otro Mundo, pero contrariamente a sus expectativas, sus seguidores
+                    se mantuvieron firmemente leales a él.</p>
+                <p class="lorem">Otro defecto de personalidad de Rimuru es su ingenuidad como líder mundial. Según los
+                    informes, fue fácil persuadirlo durante las negociaciones diplomáticas, de las que algunos
+                    gobernantes intentaron aprovecharse. El rey Gazel también reconoce este defecto e informa a Rimuru
+                    que es demasiado humilde y blando como líder. El deseo de Rimuru de ser pacifista con los humanos
+                    eventualmente tiene consecuencias nefastas para su gente, de la que él personalmente tiene la culpa.
+                    Esto deja de ser un problema después de que Rimuru se convierte en un Señor Demonio, dándole un
+                    título premonitorio para hacer que los posibles alborotadores le teman; incluso después de que lo
+                    conocen, su condición de Señor Demonio todavía los mantiene cautelosos.</p>
+                <p class="lorem">Durante la batalla, Rimuru a menudo tiende a menospreciarse mientras espera que sus
+                    enemigos sean más fuertes de lo que realmente son. Si bien a veces hace que él mismo sea demasiado
+                    pasivo y demasiado obsesionado con ocultar sus poderes, también es muy poco probable que se vuelva
+                    arrogante durante una batalla como resultado, por lo que es difícil decir si este rasgo es positivo
+                    o negativo.</p>
+                <p class="lorem">A pesar de su poder y habilidades, la mayor virtud de Rimuru es su astucia en la toma
+                    de decisiones. Rimuru ha sobrevivido contra oponentes peligrosos como Milim Nava y Hinata Sakaguchi,
+                    quienes podrían haberlo dominado fácilmente antes de su despertar como un Verdadero Señor Demonio,
+                    simplemente burlándose de ellos. Rimuru prefiere las soluciones diplomáticas y evitará los
+                    conflictos siempre que sea posible, pero no teme hacer la guerra cuando sea necesario, como se
+                    demostró cuando el Reino de Falmuth invadió.</p>
+                <p class="lorem"></p>
+
+
+
+            </div>
+
+
+            <!-- Aca van un grupo de imagenes en secuencia -->
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Aca va una imagen de fondo -->
+
+
+        <nav id="navFooterMenu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./src/paginas/personajes.html">Personajes </a></li>
+                <li><a href="./src/paginas/openings.html">Openings</a></li>
+                <li><a href="./src/paginas/transformaciones.html">Transformaciones</a></li>
+                <li><a href="./src/paginas/relaciones.html">Relaciones</a></li>
+            </ul>
+        </nav>
+
+        <p class="footerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores facilis qui a ex,
+            ullam nihil magnam, quasi tempore harum, nesciunt minima iure at. Incidunt quo ratione culpa est recusandae!
+        </p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+@import 'variables';
+
+%cuadroMain{
+
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    background-color: $colorFondo;
+
+}
+
+%titClasFont{
+
+    font-style: italic;
+    padding-bottom: 1rem;
+    text-shadow: $shadowText; 
+
+}
+
+
+%displayDesine{
+    @media screen and (max-width: 400px){
+            
+        float: center;
+        margin: .5rem auto;
+        width: 60%;
+    
+    }
+
+    @media screen and (min-width: 401px ) and (max-width: 800px){
+        
+            float: center;
+            margin: .5rem auto;
+            width: 60%;
+        
+    }
+
+    @media screen and (min-width: 801px){
+        
+            float: right;
+            width: 30%;
+        
+    }
+}
+
+%textoGeneral{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: auto;
+    font-size: .7rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+    font-family: $fuenteTexto;
+}

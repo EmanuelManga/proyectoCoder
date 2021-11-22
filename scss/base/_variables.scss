@@ -1,0 +1,31 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'listas';
+
+
+//  Variables 
+
+$bgHome: black ;
+$paddingGeneral: 20px;
+$colorNavText: white;
+$colorNavHover: rgba(169, 3, 211, 0.418);
+$navbar-light-color: rgba(0, 0, 0, 0.144);  
+$colorLineas: rgb(1, 225, 255);
+$colorFondo: #6598ffe7;
+$fuenteTexto:  'Roboto', sans-serif;
+$fuenteNav: 'Poppins', sans-serif;
+$fuenteTit: 'Fruktur', cursive;
+$colorTitClase: rgb(255, 255, 255);
+$colorTitPerso: rgb(255, 255, 255);
+$colorTitSubClase: rgb(250, 34, 153);
+$shadowText: 1px 1px rgb(0, 0, 0);
+$espesorTexto: 500;
+$colorBoxDerechaInicio: rgb(0, 0, 0);
+$colorTitVidOpening: rgb(255, 255, 255); 
+$colorTexto: rgb(0, 0, 0);   
+$colorBorderNavCont: rgb(0,0,0);  
+$colorDropMenuMod:rgba(54, 54, 54, 0.342);  
+$colorDropMenuText: nth($colores,1 );
+

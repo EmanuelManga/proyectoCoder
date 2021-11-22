@@ -1,0 +1,611 @@
+/* Nesting o Anidamiento  */
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media screen and (max-width: 400px) {
+  /* Menu navMobile */
+  /* Menu nav */
+  nav div div ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  nav div div ul li {
+    list-style-type: none;
+    float: left;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    width: 20%;
+  }
+  nav div div ul li a {
+    display: block;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-left: 0 0 0 15%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  label:hover {
+    background: grey;
+  }
+
+  input:checked ~ label {
+    background: lightgrey;
+  }
+
+  /* Fin menu navMobile */
+  .seccionInc {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body #navH {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 991px) {
+  /* Menu navMobile */
+  /* Menu nav */
+  nav {
+    padding: 0 0;
+  }
+  nav div div ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  nav div div ul li {
+    list-style-type: none;
+    float: left;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    width: 20%;
+  }
+  nav div div ul li a {
+    display: block;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin: 0 0 0 10%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  label:hover {
+    background: grey;
+  }
+
+  input:checked ~ label {
+    background: lightgrey;
+  }
+
+  /* Fin menu navMobile */
+  .seccionInc {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  body #navH {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  label, #menu {
+    display: none;
+  }
+
+  main {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  /* Menu nav */
+  body nav div div ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+  }
+  body nav div div ul li {
+    list-style-type: none;
+    float: left;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    padding: 0;
+  }
+  body nav div div ul li a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s;
+  }
+  body nav div div ul li a:hover {
+    background-color: rgba(169, 3, 211, 0.418);
+    transform: scale(1.1);
+  }
+
+  .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+  }
+
+  /* Fin menu nav  */
+}
+.transformacionesMain, .relacionesMain, .personajesMain, .openningMain, .seccionInc {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #6598ffe7;
+}
+
+.personajesMain .contenidoPerso .titPersonaje, .seccionInc .contenido .titulosSubClase, .seccionInc .contenido .titulosClase {
+  font-style: italic;
+  padding-bottom: 1rem;
+  text-shadow: 1px 1px black;
+}
+
+@media screen and (max-width: 400px) {
+  .seccionInc .boxDerecho {
+    float: center;
+    margin: 0.5rem auto;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .seccionInc .boxDerecho {
+    float: center;
+    margin: 0.5rem auto;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 801px) {
+  .seccionInc .boxDerecho {
+    float: right;
+    width: 30%;
+  }
+}
+
+.transformacionesMain .loremT, .relacionesMain .loremR, .personajesMain .contenidoPerso, .openningMain .loremO, .seccionInc .contenido {
+  color: black;
+  text-align: left;
+  line-height: auto;
+  font-size: 0.7rem;
+  padding-top: 1rem;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(../src/multimedia/imagenes/Tensei-Shitara-Slime-Datta-Ken.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Pagina de Inicio */
+/* Header */
+.bannerTit {
+  margin: 0 0 0 3%;
+}
+.bannerTit .titJap {
+  font-size: 1.5rem;
+}
+.bannerTit .titEsp {
+  font-size: 1rem;
+  margin: 0 0 100px 1.3rem;
+}
+.bannerTit .titJap, .bannerTit .titEsp {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Fruktur", cursive;
+  text-shadow: 2px 2px 2px black;
+  text-indent: 20px;
+  overflow-wrap: break-word;
+}
+
+#inicio {
+  width: 100%;
+}
+
+/* Main Inicio */
+.seccionInc {
+  /* Titulo de la pestana inicio */
+  /* Recuadro derecho dentro del main Inicio */
+  /* Texto contenido Izquierdo */
+}
+.seccionInc .animate__pulse {
+  animation: animate__pulse 0.7s;
+}
+.seccionInc .inicioTit {
+  line-height: 1.5rem;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: "Fruktur", cursive;
+  font-weight: 200;
+  color: #9eff01;
+  text-shadow: 1px 1px black;
+  display: flex;
+  justify-content: center;
+  overflow-wrap: break-word;
+}
+.seccionInc .boxDerecho {
+  overflow: auto;
+  margin-right: 10%;
+  margin-top: 1rem;
+  border: 5px solid #01e1ff;
+  border-radius: 25px;
+  margin-left: 10px;
+  padding: 0 5px 0 5px;
+  /* Ajustar tamano y posicion del box derecho segun desktop o mobile  */
+  /* Tamano de imagen humana en el box  */
+  /* Texto dentro de imagen en el box */
+}
+.seccionInc .boxDerecho .wHumanForm {
+  width: 62%;
+  margin: 0 auto;
+}
+.seccionInc .boxDerecho .textoImagenCarousel {
+  margin: 10% 0 0px 0;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: "Fruktur", cursive;
+}
+.seccionInc .boxDerecho .boxDerechoDatos {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  -webkit-box-sizing: border-box;
+  grid-column-gap: 9px;
+  border-top: 1px solid #01e1ff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+}
+.seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  margin: 0.75rem auto;
+  padding-right: 10px;
+  max-width: 40%;
+  font-size: 0.6rem;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  margin: 0.75rem auto;
+  color: black;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-size: 0.6rem;
+  font-family: "Roboto", sans-serif;
+}
+.seccionInc .contenido {
+  max-width: 90%;
+  /* Paragraph */
+  /* Linea Separador Horizontal */
+  /* H4 y H3 main inicio */
+  /* Animacion para entrega no definitiva  */
+}
+.seccionInc .contenido .lorem {
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.seccionInc .contenido .separadorHoriTit {
+  border: 0.01rem solid #01e1ff;
+  border-radius: 1px;
+  margin-bottom: 1rem;
+  margin-right: 40%;
+  margin-top: -2%;
+}
+.seccionInc .contenido .titulosClase {
+  font-size: 1.2rem;
+  color: white;
+}
+.seccionInc .contenido .titulosSubClase {
+  font-size: 1rem;
+  color: #fa2299;
+}
+.seccionInc .contenido .animate__shakeX {
+  animation: animate__shakeX 0.9s;
+}
+
+.navContMod {
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.144) !important;
+  padding: 0 0 !important;
+  border: 1px solid black !important;
+  margin: 0 0 0 15%;
+  position: sticky;
+  top: 50px;
+  float: left;
+}
+.navContMod .navContIcon {
+  width: max-content;
+}
+.navContMod .dropMenuMod {
+  background-color: rgba(54, 54, 54, 0.342);
+  border: 1px solid black;
+}
+.navContMod .dropMenuMod .dropMod {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+.navContMod .dropMenuMod .dropMod:hover {
+  background-color: rgba(92, 0, 104, 0.644) !important;
+}
+
+.navContModli {
+  list-style: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Opening */
+/* Main de Openning  */
+.openningMain {
+  /* texto esta en progreso  */
+  /* Contenedor Grid */
+}
+.openningMain .loremO {
+  max-width: 90%;
+  font-weight: 500;
+}
+.openningMain .gridConteiner {
+  display: grid;
+  object-position: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 80%;
+  margin: 2rem auto;
+}
+.openningMain .gridConteiner .vidRow {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-sizing: border-box;
+  grid-column-gap: 35px;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+@media screen and (max-width: 400px) {
+  .openningMain .gridConteiner .vidRow {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .openningMain .gridConteiner .vidRow {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 801px) {
+  .openningMain .gridConteiner .vidRow {
+    flex-direction: row;
+  }
+}
+.openningMain .gridConteiner .vidRow .itemVid {
+  transition: 0.5s;
+  /* Titulos para video dentro del grid  */
+  /* Videos dentro del grid  */
+}
+.openningMain .gridConteiner .vidRow .itemVid:hover {
+  transform: scale(1.05);
+}
+.openningMain .gridConteiner .vidRow .itemVid .vidTit {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  /* margin-bottom: 10px; */
+}
+.openningMain .gridConteiner .vidRow .itemVid .vid {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 35px;
+}
+
+/* --------------------------------------------------------------------------------- */
+.personajesMain .contenidoPerso {
+  max-width: 90%;
+  font-weight: 500;
+}
+.personajesMain .contenidoPerso .titPersonaje {
+  font-size: 1.2rem;
+  color: white;
+}
+.personajesMain .contenidoPerso .packTextImg .textPersonajes {
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.personajesMain .contenidoPerso .packTextImg .imgPersonajes {
+  overflow: auto;
+  float: left;
+  margin: 0 1rem 0 0;
+  transition: 0.5s;
+}
+.personajesMain .contenidoPerso .packTextImg .imgPersonajes:hover {
+  transform: scale(1.5);
+}
+@media screen and (max-width: 400px) {
+  .personajesMain .contenidoPerso .packTextImg .imgPersonajes {
+    width: 30%;
+    height: 30%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .personajesMain .contenidoPerso .packTextImg .imgPersonajes {
+    width: 20%;
+    height: 20%;
+  }
+}
+@media screen and (min-width: 801px) {
+  .personajesMain .contenidoPerso .packTextImg .imgPersonajes {
+    width: 12%;
+    height: 12%;
+  }
+}
+
+/* --------------------------------------------------------------------------------- */
+.relacionesMain .loremR {
+  max-width: 90%;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------------- */
+.transformacionesMain .loremT {
+  max-width: 90%;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Footer compartido para todas paginas in progress  */
+.footer {
+  background-color: rgba(0, 0, 0, 0.95);
+  margin: 1rem auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: 95%;
+}
+
+#navFooterMenu {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+}
+#navFooterMenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+#navFooterMenu ul li {
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+  padding: 0;
+}
+#navFooterMenu ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 3px 20px;
+  display: inline;
+  color: #ffa4a4;
+  float: left;
+  font-family: var(--fuenteNav);
+  transition: 0.5s;
+}
+#navFooterMenu ul li a:hover {
+  background-color: rgba(169, 3, 211, 0.418);
+  transform: scale(1.1);
+}
+
+/* Ajutar posicion del texto del footer segun desktop o mobile */
+@media screen and (max-width: 400px) {
+  .footerText {
+    color: #8aa9ff;
+    width: 60%;
+    text-align: center;
+    margin: 0.5rem auto;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .footerText {
+    color: #8aa9ff;
+    width: 60%;
+    text-align: center;
+    margin: 0.5rem auto;
+  }
+}
+@media screen and (min-width: 801px) {
+  .footerText {
+    color: #8aa9ff;
+    float: left;
+    overflow: auto;
+    width: 20%;
+    margin: -178px 0 0 390px;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

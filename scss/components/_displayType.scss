@@ -1,0 +1,288 @@
+@import '../base/variables';
+
+
+
+@media screen and (max-width: 400px){
+
+    /* Menu navMobile */
+
+            /* Menu nav */
+    
+            nav{
+
+        
+                div{
+    
+        
+                    div{
+        
+        
+                        ul{
+        
+                            margin: 0 auto;
+                            padding: 0;
+                            
+        
+                            li{
+        
+                                list-style-type: none;
+                                float: left;
+                                align-items: center;
+                                background-color: rgb(0 0 0 / 40%);    
+                                margin: 0;
+                                padding: 0;
+                                width: 20%;
+    
+        
+                                a{
+                                    display: block;
+                                    font-size: 1rem;
+                                    font-family: $fuenteNav;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+            // cambiar color a texto del nav 
+            .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+                color: $colorNavText;
+                &:hover{
+                    color: white;
+                }
+            }
+        
+    
+    input:checked  ~ ul{
+        display:block;
+    }
+
+    input{
+        display: none;
+    }
+
+
+    label{
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        margin-left: 0 0 0 15%;
+        background-color: rgb(0 0 0 / 40%);
+    }
+
+
+
+    label:hover{
+        background: grey;
+    }
+    
+    input:checked ~ label {
+        background: lightgrey; 
+    }
+
+
+    /* Fin menu navMobile */
+
+    .seccionInc{
+        max-width: 100%;
+        margin:0 auto;
+    }
+
+    html{
+        font-size: 16px;
+    }
+
+    body  #navH{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 401px ) and (max-width: 991px){
+
+    /* Menu navMobile */
+
+        /* Menu nav */
+    
+        nav{
+            padding: 0 0;
+        
+            div{
+
+    
+                div{
+    
+    
+                    ul{
+    
+                        margin: 0 auto;
+                        padding: 0;
+                        
+    
+                        li{
+    
+                            list-style-type: none;
+                            float: left;
+                            align-items: center;
+                            background-color: rgb(0 0 0 / 40%);    
+                            margin: 0;
+                            padding: 0;
+                            width: 20%;
+
+    
+                            a{
+                                display: block;
+                                font-size: 1rem;
+                                font-family: $fuenteNav;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // cambiar color a texto del nav 
+        .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+            color: $colorNavText;
+            &:hover{
+                color: white;
+            }
+        }
+    
+    input:checked  ~ ul{
+        display:block;
+    }
+
+    input{
+        display: none;
+    }
+
+
+
+    label{
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        margin: 0 0 0 10%;
+        background-color: rgb(0 0 0 / 40%);
+    }
+
+
+    label:hover{
+        background: grey;
+    }
+    
+    input:checked ~ label {
+        background: lightgrey; 
+    }
+
+
+
+
+/* Fin menu navMobile */
+
+    .seccionInc{
+        max-width:80%;
+        margin:0 auto;
+    }
+
+    html{
+        font-size: 18px;
+    }
+
+    body  #navH{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px){
+
+    label,  #menu{
+        display: none;
+    }
+    
+    main{
+        max-width:60%;
+        margin:0 auto;
+    }
+
+    html{
+        font-size: 20px;
+    }
+
+
+    /* Menu nav */
+
+body{
+
+        nav{
+
+            
+            div{
+
+                // height: 10%;
+                // width: 60%;
+
+                div{
+
+
+                    ul{
+
+                        margin: 0 auto;
+                        padding: 0;
+                        list-style-type: none;
+                        display: inline-block;
+
+                        li{
+
+                            list-style-type: none;
+                            float: left;
+                            align-items: center;
+                            background-color: rgb(0 0 0 / 40%);    
+                            margin: 0 auto;
+                            padding: 0;
+
+                            a{
+
+                                padding: .5rem 1rem;
+                                font-size: 1rem;
+                                font-family: $fuenteNav;
+                                transition:  .5s;
+                                
+                                &:hover{
+                                    background-color: $colorNavHover;
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+    // cambiar color a texto del nav 
+    .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+        color: $colorNavText;
+        &:hover{
+            color: white;
+        }
+    }
+
+    /* Fin menu nav  */
+
+}

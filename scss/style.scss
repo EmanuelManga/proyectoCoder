@@ -1,0 +1,590 @@
+/* Nesting o Anidamiento  */ 
+
+
+@import 'base/variables';
+@import 'base/listas';
+@import 'components/displayType';
+@import 'base/extends';
+
+
+
+
+    // @media screen and (max-width:968px) {
+    //     background-color: lightgreen;
+        
+
+    // }
+
+
+
+body{
+    background-image: url(../src/multimedia/imagenes/Tensei-Shitara-Slime-Datta-Ken.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+    
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+
+/* Pagina de Inicio */
+
+/* Header */
+.bannerTit{
+
+    margin: 0 0 0 3%;
+
+
+    .titJap{
+        font-size: 1.5rem;
+        
+    }
+    
+    .titEsp{
+        font-size: 1rem;
+        margin: 0 0 100px 1.3rem;
+        // width: max-content;
+        
+    }
+    
+    .titJap, .titEsp{
+        color: rgb(255, 255, 255);
+        list-style-type: none;
+        text-decoration: none;
+        font-family: $fuenteTit;  
+        
+        
+        
+        text-shadow: 2px 2px 2px rgb(0 0 0 );
+        text-indent: 20px;
+        overflow-wrap: break-word;
+        
+    }
+} 
+    
+    #inicio{
+        width: 100%;
+    }
+
+
+/* Main Inicio */
+
+.seccionInc{
+    
+    @extend %cuadroMain;
+    
+    .animate__pulse{
+        animation: animate__pulse .7s;
+
+    }    
+        /* Titulo de la pestana inicio */
+        .inicioTit{
+        
+            line-height: 1.5rem;  
+            margin: 1rem auto;
+        
+            text-align: center;
+            font-family: $fuenteTit;
+            font-weight: 200;
+            color: rgb(158, 255, 1);
+            text-shadow: $shadowText;
+        
+            display: flex;
+            justify-content: center;
+            overflow-wrap: break-word;
+        
+        }
+    
+    
+    /* Recuadro derecho dentro del main Inicio */
+    
+    .boxDerecho{
+    
+        overflow: auto;
+    
+        margin-right: 10%;
+        margin-top: 1rem;
+        border: 5px solid $colorLineas;
+        border-radius: 25px;
+        margin-left: 10px;
+        padding: 0 5px 0 5px;
+
+        /* Ajustar tamano y posicion del box derecho segun desktop o mobile  */
+        
+        @extend %displayDesine;
+
+        /* Tamano de imagen humana en el box  */
+        .wHumanForm{
+        width: 62%;
+        margin: 0 auto;
+        }
+        
+        /* Texto dentro de imagen en el box */
+        .textoImagenCarousel{
+        margin: 10% 0 0px 0;
+        color: $colorTitClase;
+        text-shadow: $shadowText;
+        font-family: $fuenteTit;
+        }
+        
+                
+        .boxDerechoDatos{
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            display: -webkit-box;
+            -webkit-box-sizing: border-box;
+            grid-column-gap: 9px;
+            border-top: 1px solid $colorLineas;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            justify-content: center;
+        
+
+            .boxDerchTit{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                overflow-wrap: break-word;
+                margin: .75rem auto;
+                padding-right: 10px;
+                max-width: 40%;
+                font-size: .60rem;
+                font-family: $fuenteTexto;
+                color: $colorBoxDerechaInicio;
+            }
+
+            .boxDerchTex{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                overflow-wrap: break-word;
+                margin: .75rem auto;
+                color: $colorBoxDerechaInicio;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                font-size: .60rem;
+                font-family: $fuenteTexto;
+            }
+        }
+
+        }
+        
+        /* Texto contenido Izquierdo */
+        
+        .contenido{
+
+            // color: rgb(0, 0, 0);
+            // text-align: left;
+            // line-height: auto;
+            // font-size: .7rem;
+            // padding-top: 1rem;
+            // margin-left: 2%;
+            // max-width: 90%;
+            // font-family: $fuenteTexto;
+        
+            @extend %textoGeneral;
+            max-width: 90%;
+    
+            /* Paragraph */
+    
+            .lorem{
+                font-weight: $espesorTexto;
+                padding-bottom: 1rem;
+            }
+        
+            
+            /* Linea Separador Horizontal */
+            .separadorHoriTit{
+                border: .01rem solid $colorLineas ;
+                border-radius: 1px;
+                margin-bottom: 1rem;
+            
+                margin-right: 40%;
+                margin-top: -2%;
+            }
+            
+            
+            /* H4 y H3 main inicio */
+            .titulosClase{
+                font-size: 1.2rem;
+                @extend %titClasFont;
+    
+                color: $colorTitClase;
+            }
+            
+            .titulosSubClase{
+                font-size: 1rem;
+                @extend %titClasFont;
+            
+                color: $colorTitSubClase;
+            
+            }
+        
+            /* Animacion para entrega no definitiva  */
+            .animate__shakeX{
+                animation: animate__shakeX .9s;
+            }
+        
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+// Nav link del contenido 
+// COLORES DE TEXTO NO DEFINITIVOS
+
+.navContMod{
+    width: max-content;
+    background-color: $navbar-light-color !important;
+    padding: 0 0 !important;
+    border: 1px solid $colorBorderNavCont !important;
+    // left: 310px ;
+    margin: 0 0 0 15%;
+    position: sticky;
+    top: 50px;
+    float: left;
+
+
+    .navContIcon{
+        width: max-content;
+    }
+
+    
+    .dropMenuMod{
+        background-color: $colorDropMenuMod ;
+        border: 1px solid $colorBorderNavCont;
+        
+        .dropMod{
+            color: $colorDropMenuText;
+            text-shadow: $shadowText;
+            
+            &:hover{
+                background-color: nth($colores, 2) !important;
+            }
+
+        }
+    }
+
+    
+}
+
+
+.navContModli{
+    list-style: none;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* Opening */
+
+
+/* Main de Openning  */
+.openningMain{
+    @extend %cuadroMain;
+    
+    /* texto esta en progreso  */
+    .loremO{
+        // color: $colorTexto;
+        // text-align: center;
+        // line-height: auto;
+        // font-family: $fuenteTexto;
+        // margin:0 auto;
+        // max-width:700px;
+
+        @extend %textoGeneral;
+        max-width: 90%;
+        font-weight: $espesorTexto;
+
+        
+    }
+
+    /* Contenedor Grid */
+    .gridConteiner{
+    
+        display: grid;
+        object-position: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        // grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: 2rem auto;
+    
+        .vidRow{
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            // display: -webkit-box;
+            -webkit-box-sizing: border-box;
+            grid-column-gap: 35px;
+            // grid-row-gap: 30px;
+            box-sizing: border-box;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;  
+            
+            @media screen and (max-width: 400px){
+            
+                flex-direction: column;
+            
+            }
+        
+            @media screen and (min-width: 401px ) and (max-width: 800px){
+                
+                flex-direction: column; 
+                
+            }
+            
+            @media screen and (min-width: 801px){
+                
+                flex-direction: row;
+                
+            }
+            
+            .itemVid{
+                transition: .5s;
+            
+                &:hover{
+                    transform: scale(1.05);
+                }
+            
+                /* Titulos para video dentro del grid  */
+                .vidTit{
+                    text-align: center;
+                    color: $colorTitVidOpening;
+                    text-shadow: $shadowText;
+                    /* margin-bottom: 10px; */
+                    
+                }
+                
+                /* Videos dentro del grid  */
+                .vid{ 
+                    height: 100%;
+                    width: 100%;
+                    object-fit:contain;
+                    padding-bottom: 35px;
+                    
+                }
+            }
+        
+        }
+    }
+
+
+}
+
+
+// personajes
+
+/* --------------------------------------------------------------------------------- */
+
+.personajesMain{
+    @extend %cuadroMain;
+
+    .contenidoPerso{
+        @extend %textoGeneral;
+        max-width: 90%;
+        font-weight: $espesorTexto;
+
+        
+        .titPersonaje{
+            font-size: 1.2rem;
+            @extend %titClasFont;
+            
+            color: $colorTitPerso;
+        }
+        
+        .packTextImg{
+
+            
+            .textPersonajes{
+                font-weight: $espesorTexto;
+                padding-bottom: 1rem;
+            }
+            
+            .imgPersonajes{
+                overflow: auto;
+                float: left;
+                margin: 0 1rem 0 0;
+                transition: .5s;
+
+                &:hover{
+                    transform: scale(1.5);
+                }
+
+                @media screen and (max-width: 400px){
+
+                    width: 30%;
+                    height: 30%;
+                
+                }
+            
+                @media screen and (min-width: 401px ) and (max-width: 800px){
+                    
+                    width: 20%;
+                    height: 20%;
+                    
+                }
+            
+                @media screen and (min-width: 801px){
+                    
+                    width: 12%;
+                    height: 12%;
+                    
+                }
+                
+            }
+            
+            
+
+        }
+
+    }
+
+}
+
+
+
+// relaciones
+
+/* --------------------------------------------------------------------------------- */
+
+
+.relacionesMain{
+    @extend %cuadroMain;
+
+    .loremR{
+        @extend %textoGeneral;
+        max-width: 90%;
+        font-weight: $espesorTexto;
+
+    }
+
+}
+
+
+
+
+// Transformaciones
+
+/* --------------------------------------------------------------------------------- */
+
+
+.transformacionesMain{
+    @extend %cuadroMain;
+
+    .loremT{
+        @extend %textoGeneral;
+        max-width: 90%;
+        font-weight: $espesorTexto;
+
+    }
+
+}
+// Footer
+
+/* --------------------------------------------------------------------------------- */
+
+/* Footer compartido para todas paginas in progress  */
+
+.footer{
+    background-color: rgb(0 0 0 / 95%);
+    margin: 1rem auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 95%;
+    
+}
+
+
+#navFooterMenu{
+    height: 10%;
+    width: 100%;
+    text-align:center;
+    overflow:auto;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+
+        li{
+            list-style-type: none;
+
+            background-color: rgb(0 0 0 / 40%);    
+            margin: 0;
+            padding: 0;
+
+            a{
+                list-style-type: none;    
+                text-decoration: none;
+                padding: 3px 20px;
+                display: inline;
+                color: rgb(255, 164, 164);
+                float: left;
+                
+                font-family: var(--fuenteNav);
+                transition:  .5s;
+
+                &:hover{
+                    background-color: $colorNavHover;
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+
+    }
+}
+
+/* Ajutar posicion del texto del footer segun desktop o mobile */
+
+@media screen and (max-width: 400px){
+    .footerText{
+        color: rgb(138, 169, 255);
+        width: 60%;
+        text-align: center;
+        margin: .5rem auto;
+        
+    }
+}
+
+@media screen and (min-width: 401px ) and (max-width: 800px){
+    .footerText{
+        color: rgb(138, 169, 255);
+        width: 60%;
+        text-align: center;
+        margin: .5rem auto;
+        
+    }
+}
+
+@media screen and (min-width: 801px){
+    .footerText{
+        color: rgb(138, 169, 255);
+    
+    
+        float: left;
+        overflow: auto;
+        width: 20%;
+        margin: -178px 0 0 390px;
+        text-align: left;
+        
+    }
+}
