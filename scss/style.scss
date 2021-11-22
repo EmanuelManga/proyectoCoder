@@ -156,9 +156,11 @@ body{
                 margin: .75rem auto;
                 padding-right: 10px;
                 max-width: 40%;
-                font-size: .60rem;
+                // font-size: .60rem;
                 font-family: $fuenteTexto;
                 color: $colorBoxDerechaInicio;
+
+                @extend %displayFontSize;
             }
 
             .boxDerchTex{
@@ -170,8 +172,10 @@ body{
                 color: $colorBoxDerechaInicio;
                 overflow-wrap: break-word;
                 hyphens: auto;
-                font-size: .60rem;
+                // font-size: .60rem;
                 font-family: $fuenteTexto;
+
+                @extend %displayFontSize;
             }
         }
 
@@ -198,6 +202,7 @@ body{
             .lorem{
                 font-weight: $espesorTexto;
                 padding-bottom: 1rem;
+                @extend %displayFontSize;
             }
         
             
@@ -300,20 +305,7 @@ body{
     @extend %cuadroMain;
     
     /* texto esta en progreso  */
-    .loremO{
-        // color: $colorTexto;
-        // text-align: center;
-        // line-height: auto;
-        // font-family: $fuenteTexto;
-        // margin:0 auto;
-        // max-width:700px;
 
-        @extend %textoGeneral;
-        max-width: 90%;
-        font-weight: $espesorTexto;
-
-        
-    }
 
     /* Contenedor Grid */
     .gridConteiner{
@@ -415,6 +407,7 @@ body{
             .textPersonajes{
                 font-weight: $espesorTexto;
                 padding-bottom: 1rem;
+                @extend %displayFontSize;
             }
             
             .imgPersonajes{
@@ -468,10 +461,34 @@ body{
 .relacionesMain{
     @extend %cuadroMain;
 
-    .loremR{
+    .contenidoRelaciones{
         @extend %textoGeneral;
         max-width: 90%;
         font-weight: $espesorTexto;
+
+        .titRelacionesGeneral{
+            font-size: 1.5rem;
+            @extend %titClasFont;
+            border-bottom: 1px solid $colorLineas;
+            
+            color: $colorRelacionesGeneral;
+        }
+
+
+        .titRelaciones{
+            font-size: 1.2rem;
+            @extend %titClasFont;
+            padding-bottom: .2rem;
+            color: $colortitRelaciones;
+        }
+
+        .textRelaciones{
+            font-weight: $espesorTexto;
+            padding-bottom: 1rem;
+            @extend %displayFontSize;
+        }
+
+
     }
 
 }

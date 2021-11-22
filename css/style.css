@@ -208,7 +208,7 @@
   background-color: #6598ffe7;
 }
 
-.personajesMain .contenidoPerso .titPersonaje, .seccionInc .contenido .titulosSubClase, .seccionInc .contenido .titulosClase {
+.relacionesMain .contenidoRelaciones .titRelaciones, .relacionesMain .contenidoRelaciones .titRelacionesGeneral, .personajesMain .contenidoPerso .titPersonaje, .seccionInc .contenido .titulosSubClase, .seccionInc .contenido .titulosClase {
   font-style: italic;
   padding-bottom: 1rem;
   text-shadow: 1px 1px black;
@@ -218,14 +218,14 @@
   .seccionInc .boxDerecho {
     float: center;
     margin: 0.5rem auto;
-    width: 60%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 800px) {
   .seccionInc .boxDerecho {
     float: center;
     margin: 0.5rem auto;
-    width: 60%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 801px) {
@@ -235,7 +235,7 @@
   }
 }
 
-.transformacionesMain .loremT, .relacionesMain .loremR, .personajesMain .contenidoPerso, .openningMain .loremO, .seccionInc .contenido {
+.transformacionesMain .loremT, .relacionesMain .contenidoRelaciones, .personajesMain .contenidoPerso, .seccionInc .contenido {
   color: black;
   text-align: left;
   line-height: auto;
@@ -243,6 +243,22 @@
   padding-top: 1rem;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 801px) {
+  .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
+    font-size: 0.7rem;
+  }
 }
 
 body {
@@ -344,7 +360,6 @@ body {
   margin: 0.75rem auto;
   padding-right: 10px;
   max-width: 40%;
-  font-size: 0.6rem;
   font-family: "Roboto", sans-serif;
   color: black;
 }
@@ -357,7 +372,6 @@ body {
   color: black;
   overflow-wrap: break-word;
   hyphens: auto;
-  font-size: 0.6rem;
   font-family: "Roboto", sans-serif;
 }
 .seccionInc .contenido {
@@ -425,10 +439,6 @@ body {
 .openningMain {
   /* texto esta en progreso  */
   /* Contenedor Grid */
-}
-.openningMain .loremO {
-  max-width: 90%;
-  font-weight: 500;
 }
 .openningMain .gridConteiner {
   display: grid;
@@ -526,9 +536,23 @@ body {
 }
 
 /* --------------------------------------------------------------------------------- */
-.relacionesMain .loremR {
+.relacionesMain .contenidoRelaciones {
   max-width: 90%;
   font-weight: 500;
+}
+.relacionesMain .contenidoRelaciones .titRelacionesGeneral {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #01e1ff;
+  color: white;
+}
+.relacionesMain .contenidoRelaciones .titRelaciones {
+  font-size: 1.2rem;
+  padding-bottom: 0.2rem;
+  color: #fa2299;
+}
+.relacionesMain .contenidoRelaciones .textRelaciones {
+  font-weight: 500;
+  padding-bottom: 1rem;
 }
 
 /* --------------------------------------------------------------------------------- */
