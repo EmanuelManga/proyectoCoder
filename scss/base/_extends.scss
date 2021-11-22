@@ -22,7 +22,7 @@
             
         float: center;
         margin: .5rem auto;
-        width: 60%;
+        width: 80%;
     
     }
 
@@ -30,7 +30,7 @@
         
             float: center;
             margin: .5rem auto;
-            width: 60%;
+            width: 80%;
         
     }
 
@@ -50,4 +50,24 @@
     padding-top: 1rem;
     margin: 0 auto;
     font-family: $fuenteTexto;
+}
+
+%displayFontSize{
+    @media screen and (max-width: 400px){
+        
+        font-size: .9rem;
+    
+    }
+
+    @media screen and (min-width: 401px ) and (max-width: 800px){
+        
+        font-size: .9rem;
+        
+    }
+
+    @media screen and (min-width: 801px){
+        
+        font-size: .7rem;
+        
+    }
 }
