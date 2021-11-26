@@ -203,6 +203,7 @@ body{
                 font-weight: $espesorTexto;
                 padding-bottom: 1rem;
                 @extend %displayFontSize;
+                
             }
         
             
@@ -245,24 +246,20 @@ body{
 
 
 
-
-
-
-
-
 // Nav link del contenido 
 // COLORES DE TEXTO NO DEFINITIVOS
 
 .navContMod{
-    width: max-content;
+    width: max-content ;
     background-color: $navbar-light-color !important;
     padding: 0 0 !important;
     border: 1px solid $colorBorderNavCont !important;
     // left: 310px ;
-    margin: 0 0 0 15%;
+    margin: 0;
     position: sticky;
     top: 50px;
-    float: left;
+    // float: left;
+    
 
 
     .navContIcon{
