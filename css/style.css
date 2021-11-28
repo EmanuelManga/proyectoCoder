@@ -208,13 +208,13 @@
 
   /* Fin menu nav  */
 }
-.transformacionesMain, .relacionesMain, .personajesMain, .openningMain, .seccionInc {
+.habilidadesMain, .relacionesMain, .personajesMain, .openningMain, .seccionInc {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   background-color: #6598ffe7;
 }
 
-.relacionesMain .contenidoRelaciones .titRelaciones, .relacionesMain .contenidoRelaciones .titRelacionesGeneral, .personajesMain .contenidoPerso .titPersonaje, .seccionInc .contenido .titulosSubClase, .seccionInc .contenido .titulosClase {
+.habilidadesMain .contenidoHab .descTitHabilidad, .habilidadesMain .contenidoHab .titHabilidad, .habilidadesMain .contenidoHab .tipoHabilidad, .relacionesMain .contenidoRelaciones .titRelaciones, .relacionesMain .contenidoRelaciones .titRelacionesGeneral, .personajesMain .contenidoPerso .titPersonaje, .seccionInc .contenido .titulosSubClase, .seccionInc .contenido .titulosClase {
   font-style: italic;
   padding-bottom: 1rem;
   text-shadow: 1px 1px black;
@@ -241,7 +241,7 @@
   }
 }
 
-.transformacionesMain .loremT, .relacionesMain .contenidoRelaciones, .personajesMain .contenidoPerso, .seccionInc .contenido {
+.habilidadesMain .contenidoHab, .relacionesMain .contenidoRelaciones, .personajesMain .contenidoPerso, .seccionInc .contenido {
   color: black;
   text-align: left;
   line-height: auto;
@@ -252,17 +252,17 @@
 }
 
 @media screen and (max-width: 400px) {
-  .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
+  .habilidadesMain .contenidoHab .habilidades, .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
     font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 401px) and (max-width: 800px) {
-  .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
+  .habilidadesMain .contenidoHab .habilidades, .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
     font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 801px) {
-  .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
+  .habilidadesMain .contenidoHab .habilidades, .relacionesMain .contenidoRelaciones .textRelaciones, .personajesMain .contenidoPerso .packTextImg .textPersonajes, .seccionInc .contenido .lorem, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTex, .seccionInc .boxDerecho .boxDerechoDatos .boxDerchTit {
     font-size: 0.7rem;
   }
 }
@@ -561,11 +561,25 @@ body {
 }
 
 /* --------------------------------------------------------------------------------- */
-.transformacionesMain .loremT {
+.habilidadesMain .contenidoHab {
   max-width: 90%;
   font-weight: 500;
 }
-
+.habilidadesMain .contenidoHab .tipoHabilidad {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #01e1ff;
+  color: white;
+}
+.habilidadesMain .contenidoHab .titHabilidad {
+  font-size: 1.2rem;
+  padding-bottom: 0.2rem;
+  color: #c805e2;
+}
+.habilidadesMain .contenidoHab .descTitHabilidad {
+  font-size: 0.9rem;
+  padding-bottom: 0.2rem;
+  color: #e122fa;
+}
 /* --------------------------------------------------------------------------------- */
 /* Footer compartido para todas paginas in progress  */
 .footer {

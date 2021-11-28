@@ -493,21 +493,53 @@ body{
 
 
 
-// Transformaciones
+// Habilodades
 
 /* --------------------------------------------------------------------------------- */
 
 
-.transformacionesMain{
+.habilidadesMain{
     @extend %cuadroMain;
-
-    .loremT{
+    
+    .contenidoHab{
         @extend %textoGeneral;
         max-width: 90%;
         font-weight: $espesorTexto;
+        
+        
+
+        .tipoHabilidad{
+            font-size: 1.5rem;
+            @extend %titClasFont;
+            border-bottom: 1px solid $colorLineas;
+            color: $colorTitGeneralHabilidad;
+            
+        }
+
+        
+        
+        .titHabilidad{
+            font-size: 1.2rem;
+            @extend %titClasFont;
+            padding-bottom: .2rem;
+            color: $colortitHabilidad;
+            
+        }
+        
+        .descTitHabilidad{
+            font-size: 0.9rem;
+            @extend %titClasFont;
+            padding-bottom: .2rem;
+            color: $colordescTitHabilidad;
+        }
+
+
+        .habilidades{
+            @extend %displayFontSize;
+
+        }
 
     }
-
 }
 // Footer
 
