@@ -195,7 +195,7 @@
     transition: 0.5s;
   }
   body nav div div ul li a:hover {
-    background-color: rgba(169, 3, 211, 0.418);
+    background-color: rgba(47, 0, 255, 0.418);
     transform: scale(1.1);
   }
 
@@ -211,13 +211,21 @@
 .habilidadesMain, .relacionesMain, .personajesMain, .openningMain, .seccionInc {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  background-color: #6598ffe7;
+  background-color: #c5e3ffe3;
 }
 
-.habilidadesMain .contenidoHab .descTitHabilidad, .habilidadesMain .contenidoHab .titHabilidad, .habilidadesMain .contenidoHab .tipoHabilidad, .relacionesMain .contenidoRelaciones .titRelaciones, .relacionesMain .contenidoRelaciones .titRelacionesGeneral, .personajesMain .contenidoPerso .titPersonaje, .seccionInc .contenido .titulosSubClase, .seccionInc .contenido .titulosClase {
+.habilidadesMain .contenidoHab .descTitHabilidad, .habilidadesMain .contenidoHab .titHabilidad, .habilidadesMain .contenidoHab .tipoHabilidad, .habilidadesMain .contenidoHab .tipHabilidadGeneral, .relacionesMain .contenidoRelaciones .titRelaciones, .relacionesMain .contenidoRelaciones .titRelacionesGeneral, .personajesMain .contenidoPerso .titPersonaje, .personajesMain .contenidoPerso .titPersonajesGeneral, .seccionInc .contenido .titulosSubClase, .seccionInc .contenido .titulosClase {
   font-style: italic;
   padding-bottom: 1rem;
+}
+
+.habilidadesMain .contenidoHab .tipHabilidadGeneral, .relacionesMain .contenidoRelaciones .titRelacionesGeneral, .personajesMain .contenidoPerso .titPersonajesGeneral, .seccionInc .contenido .titulosClase {
   text-shadow: 1px 1px black;
+}
+
+.habilidadesMain .contenidoHab .descTitHabilidad, .habilidadesMain .contenidoHab .titHabilidad, .habilidadesMain .contenidoHab .tipoHabilidad, .relacionesMain .contenidoRelaciones .titRelaciones, .personajesMain .contenidoPerso .titPersonaje, .seccionInc .contenido .titulosSubClase {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
 @media screen and (max-width: 400px) {
@@ -314,10 +322,11 @@ body {
 .seccionInc .inicioTit {
   line-height: 1.5rem;
   margin: 1rem auto;
+  font-size: 2rem;
   text-align: center;
   font-family: "Fruktur", cursive;
   font-weight: 200;
-  color: #9eff01;
+  color: #00b3ff;
   text-shadow: 1px 1px black;
   display: flex;
   justify-content: center;
@@ -327,7 +336,7 @@ body {
   overflow: auto;
   margin-right: 10%;
   margin-top: 1rem;
-  border: 5px solid #01e1ff;
+  border: 5px solid #669cff;
   border-radius: 25px;
   margin-left: 10px;
   padding: 0 5px 0 5px;
@@ -351,7 +360,7 @@ body {
   display: -webkit-box;
   -webkit-box-sizing: border-box;
   grid-column-gap: 9px;
-  border-top: 1px solid #01e1ff;
+  border-top: 1px solid #669cff;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -392,7 +401,7 @@ body {
   padding-bottom: 1rem;
 }
 .seccionInc .contenido .separadorHoriTit {
-  border: 0.01rem solid #01e1ff;
+  border: 0.01rem solid #669cff;
   border-radius: 1px;
   margin-bottom: 1rem;
   margin-right: 40%;
@@ -404,7 +413,7 @@ body {
 }
 .seccionInc .contenido .titulosSubClase {
   font-size: 1rem;
-  color: #fa2299;
+  color: #669cff;
 }
 .seccionInc .contenido .animate__shakeX {
   animation: animate__shakeX 0.9s;
@@ -504,9 +513,14 @@ body {
   max-width: 90%;
   font-weight: 500;
 }
+.personajesMain .contenidoPerso .titPersonajesGeneral {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #669cff;
+  color: white;
+}
 .personajesMain .contenidoPerso .titPersonaje {
   font-size: 1.2rem;
-  color: white;
+  color: #669cff;
 }
 .personajesMain .contenidoPerso .packTextImg .textPersonajes {
   font-weight: 500;
@@ -547,13 +561,13 @@ body {
 }
 .relacionesMain .contenidoRelaciones .titRelacionesGeneral {
   font-size: 1.5rem;
-  border-bottom: 1px solid #01e1ff;
+  border-bottom: 1px solid #669cff;
   color: white;
 }
 .relacionesMain .contenidoRelaciones .titRelaciones {
   font-size: 1.2rem;
   padding-bottom: 0.2rem;
-  color: #fa2299;
+  color: #669cff;
 }
 .relacionesMain .contenidoRelaciones .textRelaciones {
   font-weight: 500;
@@ -565,20 +579,25 @@ body {
   max-width: 90%;
   font-weight: 500;
 }
-.habilidadesMain .contenidoHab .tipoHabilidad {
+.habilidadesMain .contenidoHab .tipHabilidadGeneral {
   font-size: 1.5rem;
-  border-bottom: 1px solid #01e1ff;
+  border-bottom: 1px solid #669cff;
   color: white;
 }
+.habilidadesMain .contenidoHab .tipoHabilidad {
+  font-size: 1.4rem;
+  padding: 1rem 0 0 0;
+  color: rgba(47, 0, 255, 0.788);
+}
 .habilidadesMain .contenidoHab .titHabilidad {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-bottom: 0.2rem;
-  color: #c805e2;
+  color: #669cff;
 }
 .habilidadesMain .contenidoHab .descTitHabilidad {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-bottom: 0.2rem;
-  color: #e122fa;
+  color: #669cff;
 }
 /* --------------------------------------------------------------------------------- */
 /* Footer compartido para todas paginas in progress  */
@@ -619,7 +638,7 @@ body {
   transition: 0.5s;
 }
 #navFooterMenu ul li a:hover {
-  background-color: rgba(169, 3, 211, 0.418);
+  background-color: rgba(47, 0, 255, 0.418);
   transform: scale(1.1);
 }
 

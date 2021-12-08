@@ -88,11 +88,11 @@ body{
         
             line-height: 1.5rem;  
             margin: 1rem auto;
-        
+            font-size: 2rem;
             text-align: center;
             font-family: $fuenteTit;
             font-weight: 200;
-            color: rgb(158, 255, 1);
+            color: $colorInicioTit;
             text-shadow: $shadowText;
         
             display: flex;
@@ -222,6 +222,7 @@ body{
             .titulosClase{
                 font-size: 1.2rem;
                 @extend %titClasFont;
+                @extend %textShadow;
     
                 color: $colorTitClase;
             }
@@ -231,6 +232,7 @@ body{
                 @extend %titClasFont;
             
                 color: $colorTitSubClase;
+                @extend %textBorder;
             
             }
         
@@ -385,16 +387,24 @@ body{
 .personajesMain{
     @extend %cuadroMain;
 
+    
     .contenidoPerso{
         @extend %textoGeneral;
         max-width: 90%;
         font-weight: $espesorTexto;
-
+        
+        .titPersonajesGeneral{
+            font-size: 1.5rem;
+            @extend %titClasFont;
+            border-bottom: 1px solid $colorLineas;
+            @extend %textShadow;
+            color: $colorRelacionesGeneral;
+        }
         
         .titPersonaje{
             font-size: 1.2rem;
             @extend %titClasFont;
-            
+            @extend %textBorder;
             color: $colorTitPerso;
         }
         
@@ -467,7 +477,7 @@ body{
             font-size: 1.5rem;
             @extend %titClasFont;
             border-bottom: 1px solid $colorLineas;
-            
+            @extend %textShadow;
             color: $colorRelacionesGeneral;
         }
 
@@ -477,6 +487,7 @@ body{
             @extend %titClasFont;
             padding-bottom: .2rem;
             color: $colortitRelaciones;
+            @extend %textBorder;
         }
 
         .textRelaciones{
@@ -508,29 +519,41 @@ body{
         
         
 
-        .tipoHabilidad{
+        .tipHabilidadGeneral{
             font-size: 1.5rem;
             @extend %titClasFont;
             border-bottom: 1px solid $colorLineas;
-            color: $colorTitGeneralHabilidad;
+            @extend %textShadow;
+            color: $colorHabilidadGeneral;
+        }
+
+        .tipoHabilidad{
+            font-size: 1.4rem;
+            @extend %titClasFont;
+            padding: 1rem 0 0 0 ;
+            color: $colorTipoHabilidad;
+            @extend %textBorder;
+            
             
         }
 
         
         
         .titHabilidad{
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             @extend %titClasFont;
             padding-bottom: .2rem;
             color: $colortitHabilidad;
+            @extend %textBorder;
             
         }
         
         .descTitHabilidad{
-            font-size: 0.9rem;
+            font-size: 1rem;
             @extend %titClasFont;
             padding-bottom: .2rem;
             color: $colordescTitHabilidad;
+            @extend %textBorder;
         }
 
 
