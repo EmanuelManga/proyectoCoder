@@ -79,3 +79,49 @@
         
     }
 }
+
+
+%displayTitSize{
+    @media screen and (max-width: 400px){
+        
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    
+    }
+
+    @media screen and (min-width: 401px ) and (max-width: 800px){
+        
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        
+    }
+
+    @media screen and (min-width: 801px){
+        
+        font-size: 2rem;
+        line-height: 1.5rem;
+        
+    }
+}
+
+
+%displayLogoSize{
+    @media screen and (max-width: 400px){
+        
+        width:95%;
+    
+    }
+
+    @media screen and (min-width: 401px ) and (max-width: 800px){
+        
+        width:80%;
+        
+    }
+
+    @media screen and (min-width: 801px){
+        
+        width:30%;
+        margin: 0 0 0 3%;
+        
+    }
+}

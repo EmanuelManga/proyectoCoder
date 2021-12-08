@@ -29,48 +29,26 @@ body{
     
 
 
+        .bannerTit{
+
+            margin: auto;
+            
+            
+
+            .logo{
+                @extend %displayLogoSize;
+            }
+
+        } 
+    
+
 
 
 /* ------------------------------------------------------------------------------ */
 
 /* Pagina de Inicio */
 
-/* Header */
-.bannerTit{
 
-    margin: 0 0 0 3%;
-
-
-    .titJap{
-        font-size: 1.5rem;
-        
-    }
-    
-    .titEsp{
-        font-size: 1rem;
-        margin: 0 0 100px 1.3rem;
-        // width: max-content;
-        
-    }
-    
-    .titJap, .titEsp{
-        color: rgb(255, 255, 255);
-        list-style-type: none;
-        text-decoration: none;
-        font-family: $fuenteTit;  
-        
-        
-        
-        text-shadow: 2px 2px 2px rgb(0 0 0 );
-        text-indent: 20px;
-        overflow-wrap: break-word;
-        
-    }
-} 
-    
-    #inicio{
-        width: 100%;
-    }
 
 
 /* Main Inicio */
@@ -86,9 +64,8 @@ body{
         /* Titulo de la pestana inicio */
         .inicioTit{
         
-            line-height: 1.5rem;  
+            
             margin: 1rem auto;
-            font-size: 2rem;
             text-align: center;
             font-family: $fuenteTit;
             font-weight: 200;
@@ -98,6 +75,7 @@ body{
             display: flex;
             justify-content: center;
             overflow-wrap: break-word;
+            @extend %displayTitSize;
         
         }
     

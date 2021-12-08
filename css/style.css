@@ -275,6 +275,42 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .seccionInc .inicioTit {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .seccionInc .inicioTit {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (min-width: 801px) {
+  .seccionInc .inicioTit {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bannerTit .logo {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .bannerTit .logo {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 801px) {
+  .bannerTit .logo {
+    width: 30%;
+    margin: 0 0 0 3%;
+  }
+}
+
 body {
   background-image: url(../src/multimedia/imagenes/Tensei-Shitara-Slime-Datta-Ken.jpg);
   background-attachment: fixed;
@@ -283,33 +319,11 @@ body {
   background-size: cover;
 }
 
+.bannerTit {
+  margin: auto;
+}
 /* ------------------------------------------------------------------------------ */
 /* Pagina de Inicio */
-/* Header */
-.bannerTit {
-  margin: 0 0 0 3%;
-}
-.bannerTit .titJap {
-  font-size: 1.5rem;
-}
-.bannerTit .titEsp {
-  font-size: 1rem;
-  margin: 0 0 100px 1.3rem;
-}
-.bannerTit .titJap, .bannerTit .titEsp {
-  color: white;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: "Fruktur", cursive;
-  text-shadow: 2px 2px 2px black;
-  text-indent: 20px;
-  overflow-wrap: break-word;
-}
-
-#inicio {
-  width: 100%;
-}
-
 /* Main Inicio */
 .seccionInc {
   /* Titulo de la pestana inicio */
@@ -320,9 +334,7 @@ body {
   animation: animate__pulse 0.7s;
 }
 .seccionInc .inicioTit {
-  line-height: 1.5rem;
   margin: 1rem auto;
-  font-size: 2rem;
   text-align: center;
   font-family: "Fruktur", cursive;
   font-weight: 200;
