@@ -8,16 +8,16 @@
 
             /* Menu nav */
     
-            nav{
+            .navMenu{
 
         
-                div{
+                .divConteinerNav{
     
         
-                    div{
+                    .divCollapseNav{
         
         
-                        ul{
+                        .navMenuUlMod{
         
                             margin: 0 auto;
                             padding: 1rem 1rem;
@@ -27,7 +27,7 @@
                             border: 1px solid $colorBorderNavCont;
                             margin: 0 0 0 0 !important;
         
-                            li{
+                            .navLiNav{
         
                                 list-style-type: none;
                                 float: left;
@@ -38,7 +38,7 @@
                                 width: 20%;
     
         
-                                a{
+                                .navANav{
                                     display: block;
                                     font-size: 1rem;
                                     font-family: $fuenteNav;
@@ -50,7 +50,7 @@
             }
         
             // cambiar color a texto del nav 
-            .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+            .navMenu , .navMenu .navMenuUlMod .navANav{
                 color: $colorNavText;
                 &:hover{
                     color: white;
@@ -115,16 +115,16 @@
 
         /* Menu nav */
     
-        nav{
+        .navMenu{
             padding: 0 0;
         
-            div{
-
+            .divConteinerNav{
     
-                div{
-    
-    
-                    ul{
+        
+                .divCollapseNav{
+        
+        
+                    .navMenuUlMod{
     
                         margin: 0 auto;
                         padding: 1rem 1rem;
@@ -136,7 +136,7 @@
                         
                         
     
-                        li{
+                        .navLiNav{
     
                             list-style-type: none;
                             float: left;
@@ -147,7 +147,7 @@
                             width: 20%;
 
     
-                            a{
+                            .navANav{
                                 display: block;
                                 font-size: 1rem;
                                 font-family: $fuenteNav;
@@ -159,7 +159,7 @@
         }
         
         // cambiar color a texto del nav 
-        .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+        .navMenu , .navMenu .navMenuUlMod .navANav{
             color: $colorNavText;
             &:hover{
                 color: white;
@@ -239,18 +239,16 @@
 
 body{
 
-        nav{
+    .navMenu{
 
-            
-            div{
+    
+        .divConteinerNav{
 
-                // height: 10%;
-                // width: 60%;
-
-                div{
-
-
-                    ul{
+    
+            .divCollapseNav{
+    
+    
+                .navMenuUlMod{
 
                         margin: 0 auto;
                         padding: 0;
@@ -258,7 +256,7 @@ body{
                         display: inline-block;
 
 
-                        li{
+                        .navLiNav{
 
                             list-style-type: none;
                             float: left;
@@ -267,7 +265,7 @@ body{
                             margin: 0 auto;
                             padding: 0;
 
-                            a{
+                            .navANav{
 
                                 padding: .5rem 1rem;
                                 font-size: 1rem;
@@ -289,7 +287,7 @@ body{
 
 
     // cambiar color a texto del nav 
-    .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+    .navMenu , .navMenu .navMenuUlMod .navANav{
         color: $colorNavText;
         &:hover{
             color: white;

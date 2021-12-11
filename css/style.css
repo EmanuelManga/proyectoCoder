@@ -5,7 +5,7 @@
 @media screen and (max-width: 400px) {
   /* Menu navMobile */
   /* Menu nav */
-  nav div div ul {
+  .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod {
     margin: 0 auto;
     padding: 1rem 1rem;
     background-color: rgba(54, 54, 54, 0.342);
@@ -13,7 +13,7 @@
     border: 1px solid black;
     margin: 0 0 0 0 !important;
   }
-  nav div div ul li {
+  .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod .navLiNav {
     list-style-type: none;
     float: left;
     align-items: center;
@@ -21,16 +21,16 @@
     padding: 0;
     width: 20%;
   }
-  nav div div ul li a {
+  .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod .navLiNav .navANav {
     display: block;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
   }
 
-  .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+  .navMenu, .navMenu .navMenuUlMod .navANav {
     color: white;
   }
-  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+  .navMenu:hover, .navMenu .navMenuUlMod .navANav:hover {
     color: white;
   }
 
@@ -82,10 +82,10 @@
 @media screen and (min-width: 401px) and (max-width: 991px) {
   /* Menu navMobile */
   /* Menu nav */
-  nav {
+  .navMenu {
     padding: 0 0;
   }
-  nav div div ul {
+  .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod {
     margin: 0 auto;
     padding: 1rem 1rem;
     background-color: rgba(54, 54, 54, 0.342);
@@ -93,7 +93,7 @@
     border: 1px solid black;
     margin: 0 0 0 0 !important;
   }
-  nav div div ul li {
+  .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod .navLiNav {
     list-style-type: none;
     float: left;
     align-items: center;
@@ -101,16 +101,16 @@
     padding: 0;
     width: 20%;
   }
-  nav div div ul li a {
+  .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod .navLiNav .navANav {
     display: block;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
   }
 
-  .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+  .navMenu, .navMenu .navMenuUlMod .navANav {
     color: white;
   }
-  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+  .navMenu:hover, .navMenu .navMenuUlMod .navANav:hover {
     color: white;
   }
 
@@ -174,13 +174,13 @@
   }
 
   /* Menu nav */
-  body nav div div ul {
+  body .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod {
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
     display: inline-block;
   }
-  body nav div div ul li {
+  body .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod .navLiNav {
     list-style-type: none;
     float: left;
     align-items: center;
@@ -188,21 +188,21 @@
     margin: 0 auto;
     padding: 0;
   }
-  body nav div div ul li a {
+  body .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod .navLiNav .navANav {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     transition: 0.5s;
   }
-  body nav div div ul li a:hover {
+  body .navMenu .divConteinerNav .divCollapseNav .navMenuUlMod .navLiNav .navANav:hover {
     background-color: rgba(47, 0, 255, 0.418);
     transform: scale(1.1);
   }
 
-  .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+  .navMenu, .navMenu .navMenuUlMod .navANav {
     color: white;
   }
-  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover {
+  .navMenu:hover, .navMenu .navMenuUlMod .navANav:hover {
     color: white;
   }
 
@@ -429,34 +429,6 @@ body {
 }
 .seccionInc .contenido .animate__shakeX {
   animation: animate__shakeX 0.9s;
-}
-
-.navContMod {
-  width: max-content;
-  background-color: rgba(0, 0, 0, 0.144) !important;
-  padding: 0 0 !important;
-  border: 1px solid black !important;
-  margin: 0;
-  position: sticky;
-  top: 50px;
-}
-.navContMod .navContIcon {
-  width: max-content;
-}
-.navContMod .dropMenuMod {
-  background-color: rgba(54, 54, 54, 0.342);
-  border: 1px solid black;
-}
-.navContMod .dropMenuMod .dropMod {
-  color: white;
-  text-shadow: 1px 1px black;
-}
-.navContMod .dropMenuMod .dropMod:hover {
-  background-color: rgba(92, 0, 104, 0.644) !important;
-}
-
-.navContModli {
-  list-style: none;
 }
 
 /* -------------------------------------------------------------------------------- */

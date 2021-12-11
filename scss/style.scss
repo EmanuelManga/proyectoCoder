@@ -229,46 +229,46 @@ body{
 // Nav link del contenido 
 // COLORES DE TEXTO NO DEFINITIVOS
 
-.navContMod{
-    width: max-content ;
-    background-color: $navbar-light-color !important;
-    padding: 0 0 !important;
-    border: 1px solid $colorBorderNavCont !important;
-    // left: 310px ;
-    margin: 0;
-    position: sticky;
-    top: 50px;
-    // float: left;
+// .navContMod{
+//     width: max-content ;
+//     background-color: $navbar-light-color !important;
+//     padding: 0 0 !important;
+//     border: 1px solid $colorBorderNavCont !important;
+//     // left: 310px ;
+//     margin: 0;
+//     position: sticky;
+//     top: 50px;
+//     // float: left;
     
 
 
-    .navContIcon{
-        width: max-content;
-    }
+//     .navContIcon{
+//         width: max-content;
+//     }
 
     
-    .dropMenuMod{
-        background-color: $colorDropMenuMod ;
-        border: 1px solid $colorBorderNavCont;
+//     .dropMenuMod{
+//         background-color: $colorDropMenuMod ;
+//         border: 1px solid $colorBorderNavCont;
         
-        .dropMod{
-            color: $colorDropMenuText;
-            text-shadow: $shadowText;
+//         .dropMod{
+//             color: $colorDropMenuText;
+//             text-shadow: $shadowText;
             
-            &:hover{
-                background-color: nth($colores, 2) !important;
-            }
+//             &:hover{
+//                 background-color: nth($colores, 2) !important;
+//             }
 
-        }
-    }
+//         }
+//     }
 
     
-}
+// }
 
 
-.navContModli{
-    list-style: none;
-}
+// .navContModli{
+//     list-style: none;
+// }
 
 
 
