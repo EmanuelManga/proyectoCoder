@@ -1,636 +1,130 @@
-/* Nesting o Anidamiento  */ 
 
 
-@import 'base/variables';
-@import 'base/listas';
-@import 'components/displayType';
-@import 'base/extends';
-
-
-
-
-    // @media screen and (max-width:968px) {
-    //     background-color: lightgreen;
-        
-
-    // }
-
-
-
-body{
-    background-image: url(../src/multimedia/imagenes/Tensei-Shitara-Slime-Datta-Ken.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-    
-
-
-        .bannerTit{
-
-            margin: auto;
-            
-            
-
-            .logo{
-                @extend %displayLogoSize;
-            }
-
-        } 
-    
-
-
-
-/* ------------------------------------------------------------------------------ */
-
-/* Pagina de Inicio */
-
-
-
-
-/* Main Inicio */
-
-.seccionInc{
-    
-    @extend %cuadroMain;
-    
-    .animate__pulse{
-        animation: animate__pulse .7s;
-
-    }    
-        /* Titulo de la pestana inicio */
-        .inicioTit{
-        
-            
-            margin: 1rem auto;
-            text-align: center;
-            font-family: $fuenteTit;
-            font-weight: 200;
-            color: $colorInicioTit;
-            text-shadow: $shadowText;
-        
-            display: flex;
-            justify-content: center;
-            overflow-wrap: break-word;
-            @extend %displayTitSize;
-        
-        }
-    
-    
-    /* Recuadro derecho dentro del main Inicio */
-    
-    .boxDerecho{
-    
-        overflow: auto;
-    
-        margin-right: 10%;
-        margin-top: 1rem;
-        border: 5px solid $colorLineas;
-        border-radius: 25px;
-        margin-left: 10px;
-        padding: 0 5px 0 5px;
-
-        /* Ajustar tamano y posicion del box derecho segun desktop o mobile  */
-        
-        @extend %displayDesine;
-
-        /* Tamano de imagen humana en el box  */
-        .wHumanForm{
-        width: 62%;
-        margin: 0 auto;
-        }
-        
-        /* Texto dentro de imagen en el box */
-        .textoImagenCarousel{
-        margin: 10% 0 0px 0;
-        color: $colorTitClase;
-        text-shadow: $shadowText;
-        font-family: $fuenteTit;
-        }
-        
-                
-        .boxDerechoDatos{
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            display: -webkit-box;
-            -webkit-box-sizing: border-box;
-            grid-column-gap: 9px;
-            border-top: 1px solid $colorLineas;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: row;
-            overflow: hidden;
-            justify-content: center;
-        
-
-            .boxDerchTit{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                overflow-wrap: break-word;
-                margin: .75rem auto;
-                padding-right: 10px;
-                max-width: 40%;
-                // font-size: .60rem;
-                font-family: $fuenteTexto;
-                color: $colorBoxDerechaInicio;
-
-                @extend %displayFontSize;
-            }
-
-            .boxDerchTex{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                overflow-wrap: break-word;
-                margin: .75rem auto;
-                color: $colorBoxDerechaInicio;
-                overflow-wrap: break-word;
-                hyphens: auto;
-                // font-size: .60rem;
-                font-family: $fuenteTexto;
-
-                @extend %displayFontSize;
-            }
-        }
-
-        }
-        
-        /* Texto contenido Izquierdo */
-        
-        .contenido{
-
-            // color: rgb(0, 0, 0);
-            // text-align: left;
-            // line-height: auto;
-            // font-size: .7rem;
-            // padding-top: 1rem;
-            // margin-left: 2%;
-            // max-width: 90%;
-            // font-family: $fuenteTexto;
-        
-            @extend %textoGeneral;
-            max-width: 90%;
-    
-            /* Paragraph */
-    
-            .lorem{
-                font-weight: $espesorTexto;
-                padding-bottom: 1rem;
-                @extend %displayFontSize;
-                
-            }
-        
-            
-            /* Linea Separador Horizontal */
-            .separadorHoriTit{
-                border: .01rem solid $colorLineas ;
-                border-radius: 1px;
-                margin-bottom: 1rem;
-            
-                margin-right: 40%;
-                margin-top: -2%;
-            }
-            
-            
-            /* H4 y H3 main inicio */
-            .titulosClase{
-                font-size: 1.2rem;
-                @extend %titClasFont;
-                @extend %textShadow;
-    
-                color: $colorTitClase;
-            }
-            
-            .titulosSubClase{
-                font-size: 1rem;
-                @extend %titClasFont;
-            
-                color: $colorTitSubClase;
-                @extend %textBorder;
-            
-            }
-        
-            /* Animacion para entrega no definitiva  */
-            .animate__shakeX{
-                animation: animate__shakeX .9s;
-            }
-        
-    }
-    }
-
-
-
-
-
-// Nav link del contenido 
-// COLORES DE TEXTO NO DEFINITIVOS
-
-// .navContMod{
-//     width: max-content ;
-//     background-color: $navbar-light-color !important;
-//     padding: 0 0 !important;
-//     border: 1px solid $colorBorderNavCont !important;
-//     // left: 310px ;
-//     margin: 0;
-//     position: sticky;
-//     top: 50px;
-//     // float: left;
-    
-
-
-//     .navContIcon{
-//         width: max-content;
-//     }
-
-    
-//     .dropMenuMod{
-//         background-color: $colorDropMenuMod ;
-//         border: 1px solid $colorBorderNavCont;
-        
-//         .dropMod{
-//             color: $colorDropMenuText;
-//             text-shadow: $shadowText;
-            
-//             &:hover{
-//                 background-color: nth($colores, 2) !important;
-//             }
-
-//         }
-//     }
-
-    
-// }
-
-
-// .navContModli{
-//     list-style: none;
-// }
-
-
-
-/* -------------------------------------------------------------------------------- */
-
-/* Opening */
-
-
-/* Main de Openning  */
-.openningMain{
-    @extend %cuadroMain;
-    
-    /* texto esta en progreso  */
-
-
-    /* Contenedor Grid */
-    .gridConteiner{
-    
-        display: grid;
-        object-position: center;
-        grid-template-rows: 1fr 1fr 1fr;
-        // grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        width: 80%;
-        margin: 2rem auto;
-    
-        .vidRow{
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            // display: -webkit-box;
-            -webkit-box-sizing: border-box;
-            grid-column-gap: 35px;
-            // grid-row-gap: 30px;
-            box-sizing: border-box;
-            display: flex;
-            overflow: hidden;
-            justify-content: center;  
-            
-            @media screen and (max-width: 400px){
-            
-                flex-direction: column;
-            
-            }
-        
-            @media screen and (min-width: 401px ) and (max-width: 800px){
-                
-                flex-direction: column; 
-                
-            }
-            
-            @media screen and (min-width: 801px){
-                
-                flex-direction: row;
-                
-            }
-            
-            .itemVid{
-                transition: .5s;
-            
-                &:hover{
-                    transform: scale(1.05);
-                }
-            
-                /* Titulos para video dentro del grid  */
-                .vidTit{
-                    text-align: center;
-                    color: $colorTitVidOpening;
-                    text-shadow: $shadowText;
-                    /* margin-bottom: 10px; */
-                    
-                }
-                
-                /* Videos dentro del grid  */
-                .vid{ 
-                    height: 100%;
-                    width: 100%;
-                    object-fit:contain;
-                    padding-bottom: 35px;
-                    
-                }
-            }
-        
-        }
-    }
-
-
-}
-
-
-// personajes
-
-/* --------------------------------------------------------------------------------- */
-
-.personajesMain{
-    @extend %cuadroMain;
-
-    
-    .contenidoPerso{
-        @extend %textoGeneral;
-        max-width: 90%;
-        font-weight: $espesorTexto;
-        
-        .titPersonajesGeneral{
-            font-size: 1.5rem;
-            @extend %titClasFont;
-            border-bottom: 1px solid $colorLineas;
-            @extend %textShadow;
-            color: $colorRelacionesGeneral;
-        }
-        
-        .titPersonaje{
-            font-size: 1.2rem;
-            @extend %titClasFont;
-            @extend %textBorder;
-            color: $colorTitPerso;
-        }
-        
-        .packTextImg{
-
-            
-            .textPersonajes{
-                font-weight: $espesorTexto;
-                padding-bottom: 1rem;
-                @extend %displayFontSize;
-            }
-            
-            .imgPersonajes{
-                overflow: auto;
-                float: left;
-                margin: 0 1rem 0 0;
-                transition: .5s;
-
-                &:hover{
-                    transform: scale(1.5);
-                }
-
-                @media screen and (max-width: 400px){
-
-                    width: 30%;
-                    height: 30%;
-                
-                }
-            
-                @media screen and (min-width: 401px ) and (max-width: 800px){
-                    
-                    width: 20%;
-                    height: 20%;
-                    
-                }
-            
-                @media screen and (min-width: 801px){
-                    
-                    width: 12%;
-                    height: 12%;
-                    
-                }
-                
-            }
-            
-            
-
-        }
-
-    }
-
-}
-
-
-
-// relaciones
-
-/* --------------------------------------------------------------------------------- */
-
-
-.relacionesMain{
-    @extend %cuadroMain;
-
-    .contenidoRelaciones{
-        @extend %textoGeneral;
-        max-width: 90%;
-        font-weight: $espesorTexto;
-
-        .titRelacionesGeneral{
-            font-size: 1.5rem;
-            @extend %titClasFont;
-            border-bottom: 1px solid $colorLineas;
-            @extend %textShadow;
-            color: $colorRelacionesGeneral;
-        }
-
-
-        .titRelaciones{
-            font-size: 1.2rem;
-            @extend %titClasFont;
-            padding-bottom: .2rem;
-            color: $colortitRelaciones;
-            @extend %textBorder;
-        }
-
-        .textRelaciones{
-            font-weight: $espesorTexto;
-            padding-bottom: 1rem;
-            @extend %displayFontSize;
-        }
-
-
-    }
-
+.hide {
+	display: none;
 }
 
 
 
 
-// Habilodades
 
-/* --------------------------------------------------------------------------------- */
+#bodyIndex{
+	max-width: 90%;
+	margin: auto auto;
+	margin-bottom: 4%;
+	}
 
+	.index{
+		margin-bottom: 4%;
+	}
 
-.habilidadesMain{
-    @extend %cuadroMain;
-    
-    .contenidoHab{
-        @extend %textoGeneral;
-        max-width: 90%;
-        font-weight: $espesorTexto;
-        
-        
+	.divWrapper{
+		width: 100%;
+		position: fixed;
+		top: 3px;
+		z-index: 9;
+		background-color: #fff;
 
-        .tipHabilidadGeneral{
-            font-size: 1.5rem;
-            @extend %titClasFont;
-            border-bottom: 1px solid $colorLineas;
-            @extend %textShadow;
-            color: $colorHabilidadGeneral;
-        }
+		.divNav{
+			display: flex;
+			width: 40%;
+			margin: auto;
+			height: fit-content;
+			justify-content: space-between;
+			
+			.categoriaInicio{
+				text-decoration: none;
+				color: #E84C3D;
+				padding-right: 0.5rem;
+			}
 
-        .tipoHabilidad{
-            font-size: 1.4rem;
-            @extend %titClasFont;
-            padding: 1rem 0 0 0 ;
-            color: $colorTipoHabilidad;
-            @extend %textBorder;
-            
-            
-        }
+			.searchbar{
+				width: 75%;
 
-        
-        
-        .titHabilidad{
-            font-size: 1.1rem;
-            @extend %titClasFont;
-            padding-bottom: .2rem;
-            color: $colortitHabilidad;
-            @extend %textBorder;
-            
-        }
-        
-        .descTitHabilidad{
-            font-size: 1rem;
-            @extend %titClasFont;
-            padding-bottom: .2rem;
-            color: $colordescTitHabilidad;
-            @extend %textBorder;
-        }
+			}
+
+			.botonCarrito{
+				width: 40px;
+				height: 32px;
+				margin: auto;
+				border: none;
+				// border-radius: 5%;
+				
+				
+				
+			}
+			
+		}
+	}
 
 
-        .habilidades{
-            @extend %displayFontSize;
 
-        }
+.categoryList{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+	
+	
+		.categoryItem{
+			display: block;
+			width: 90%;
+			padding: 15px 0;
+			margin-bottom: 20px;
+			background: #E84C3D;
+		
+			border-radius: 1.087em;
+			text-align: center;
+			text-decoration: none;
+			color: #fff;
+		}
+		
+		
+		.ct_item-active{
+			background: #02b875;
+		}
 
-    }
-}
-// Footer
+	}
+	.pushbarCarrito{
+		width: 20% !important;
 
-/* --------------------------------------------------------------------------------- */
-
-/* Footer compartido para todas paginas in progress  */
-
-.footer{
-    background-color: rgb(0 0 0 / 95%);
-    margin: 1rem auto;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    width: 95%;
-    
-}
+		.divCarrito{
+			margin: auto;
+			// max-width: fit-content;
+		}
+	}
 
 
-#navFooterMenu{
-    height: 10%;
-    width: 100%;
-    text-align:center;
-    overflow:auto;
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: inline-block;
+	.container{
+		margin-top: 4%;
+	}
 
-        li{
-            list-style-type: none;
+	.contenedorCarrito{
+		margin: 2% 2% 2% 2%;
 
-            background-color: rgb(0 0 0 / 40%);    
-            margin: 0;
-            padding: 0;
+	}	
 
-            a{
-                list-style-type: none;    
-                text-decoration: none;
-                padding: 3px 20px;
-                display: inline;
-                color: rgb(255, 164, 164);
-                float: left;
-                
-                font-family: var(--fuenteNav);
-                transition:  .5s;
+	.comprarContent{
+		width: 80%;
+		margin: 5% auto;
+		// justify-content: space-between;
+		
+		.fCompra{
+			text-align: center;
+		}
 
-                &:hover{
-                    background-color: $colorNavHover;
-                    transform: scale(1.1);
-                }
-            }
-            
-        }
+		.carritoCompraAside{
+			float: left;
+			// width: 40%;
+			
+		}
+		
+		.formCompraAside{
+			float: left;
+			width: 40%;
+		}
+	
+	}
 
-    }
-}
 
-/* Ajutar posicion del texto del footer segun desktop o mobile */
 
-@media screen and (max-width: 400px){
-    .footerText{
-        color: rgb(138, 169, 255);
-        width: 60%;
-        text-align: center;
-        margin: .5rem auto;
-        
-    }
-}
-
-@media screen and (min-width: 401px ) and (max-width: 800px){
-    .footerText{
-        color: rgb(138, 169, 255);
-        width: 60%;
-        text-align: center;
-        margin: .5rem auto;
-        
-    }
-}
-
-@media screen and (min-width: 801px){
-    .footerText{
-        color: rgb(138, 169, 255);
-    
-    
-        float: left;
-        overflow: auto;
-        width: 20%;
-        margin: -178px 0 0 390px;
-        text-align: left;
-        
-    }
-}
